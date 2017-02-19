@@ -1,0 +1,95 @@
+.bloque{
+    /*z-index:20000;*/
+    position:relative;
+    margin-top:100px;
+}
+
+.consolas{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    min-height: 120vh;
+}
+
+li:hover{
+    color: rgb(171, 180, 176);
+}
+
+.portfolio_filter{
+    min-height: 19vh;
+}
+
+.portfolio_filter ul{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio_filter #sub-menu1{ /* escondo el submenu1 */
+    /*display:none;*/
+    display:block;
+    position:absolute;
+    width: 711px;
+    left: -268px;
+    font-size: 0.7em;
+}
+
+.portfolio_filter li:hover > #sub-menu1{ /* abro el submenu1 */
+    display:inline-block;
+}
+
+.portfolio_filter li:hover > #sub-menu1 li:hover{ /* abro el submenu1 */
+    color: #549DD9;
+}
+
+.portfolio_filter #sub-menu2{ /* escondo el submenu*/
+    /*display:none;*/
+    display:block;
+    position:absolute;
+    width: 711px;
+    left: -396px;
+    font-size: 0.7em;
+}
+
+.portfolio_filter li:hover > #sub-menu2{ /* abro el submenu */
+    display:inline-block;
+}
+
+.portfolio_filter li:hover > #sub-menu2 li:hover{ /* abro el submenu */
+    color: #549DD9;
+}
+
+.portfolio_filter ul li{
+    display: inline-block;
+    position: relative;
+    padding-right: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.portfolio_filter ul li:before{
+    position: absolute;
+    content: "/";
+    right:0;
+    top:0;
+}
+
+.portfolio_filter ul li:last-child{
+    padding-right: 0;
+}
+
+.portfolio_filter ul li:last-child:before{
+    display: none;
+}
+
+.portfolio_filter ul li.active{
+    color: #549DD9;
+}
+
+.portfolio_filter ul li:first-child{
+    margin-left:  0;
+}
+
