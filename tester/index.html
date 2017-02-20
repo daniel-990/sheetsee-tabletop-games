@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<section id="categrias" class="container">
+    <h1 class="text-center">Tablas</h1>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" data-categoria="atary">atary</button>
+        <button type="button" class="btn btn-default" data-categoria="sega">sega</button>
+        <button type="button" class="btn btn-default" data-categoria="microsoft">microsoft</button>
+        <button type="button" class="btn btn-default" data-categoria="nintendo">nintendo</button>
+        <button type="button" class="btn btn-default" data-categoria="sony">sony</button>
+        <button type="button" class="btn btn-default" data-categoria="spectrum">spectrum</button>
+    </div>
+</section>
+<br>
+
+
+<section class="container">
+    <div id="target"></div>
+</section>
+<script id="template" type="x-tmpl-mustache">
+
+            <div class="col-md-4">
+                <div id="{{marca}}"  class="consolas bg-info {{marca_id}}">
+                    <div class="thumbnail">
+                        <h5 class="text-left" style="color:black"><u>{{ano}}</u></h5>
+                        <img src="{{logo}}" class="img-responsive" alt="">    
+                        <div class="caption">
+                            <h2 class="text-center">{{nombre}}</h2>
+                            <p class="text-left" style="font-size: 12px;">{{descripcion}}</p>
+                            <img src="{{imagen}}" class="img-responsive" alt="">    
+                            <blockquote id="marca" class="blockquote-reverse">
+                                <p class="text-left">{{marca}}</p>
+                            </blockquote>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+
+</script>
+
+
+<!-- <br>
+<section class="container">
+    <div class="row">
+        <section id="fullTable"></section>
+        <script id="fullTable_template" type="text/html">
+        {{#rows}}
+            <div class="col-md-4">
+                <div id="{{marca}}" class="consolas bg-info">
+                    <div class="thumbnail">
+                        <h5 class="text-left" style="color:black"><u>{{ano}}</u></h5>
+                        <img src="{{logo}}" class="img-responsive" alt="">    
+                        <div class="caption">
+                            <h2 class="text-center">{{nombre}}</h2>
+                            <p class="text-left" style="font-size: 12px;">{{descripcion}}</p>
+                            <img src="{{imagen}}" class="img-responsive" alt="">    
+                            <blockquote id="marca" class="blockquote-reverse">
+                                <p class="text-left">{{marca}}</p>
+                            </blockquote>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+            {{/rows}}
+        </script>
+    </div>
+</section>
+ -->
+
+
+
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/mustache.min.js"></script>
+    <script type="text/javascript" src="lib/sheetsee.js"></script>
+    <script type="text/javascript" src="lib/tabletop1.3.4.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
